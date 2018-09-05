@@ -1,0 +1,23 @@
+﻿@using System.IdentityModel.Metadata
+
+@{
+    ViewBag.Title = "LoggedIn";
+    Layout = "~/Views/Home/_Layout.cshtml";
+}
+
+<h2>LoggedIn</h2>
+<fieldset>
+    <legend>
+        <text>
+            @if(Session["Email"] != null)
+            {
+            <text>
+
+                Welcome!!!!! @Session["Email"].ToString()
+            </text>
+            }
+        </text>
+    </legend>
+</fieldset>
+
+
