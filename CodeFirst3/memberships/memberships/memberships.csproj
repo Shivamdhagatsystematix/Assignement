@@ -195,29 +195,53 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\ItemController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ItemTypeController.cs" />
     <Compile Include="Areas\Admin\Controllers\PartController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ProductLinkTextController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ProductTypeController.cs" />
     <Compile Include="Areas\Admin\Controllers\SectionController.cs" />
+    <Compile Include="Areas\Admin\Entites\Item.cs" />
+    <Compile Include="Areas\Admin\Entites\ItemType.cs" />
+    <Compile Include="Areas\Admin\Entites\Part.cs" />
+    <Compile Include="Areas\Admin\Entites\Product.cs" />
+    <Compile Include="Areas\Admin\Entites\ProductItem.cs" />
+    <Compile Include="Areas\Admin\Entites\ProductLinkText .cs" />
+    <Compile Include="Areas\Admin\Entites\ProductType.cs" />
+    <Compile Include="Areas\Admin\Entites\Section.cs" />
+    <Compile Include="Areas\Admin\Entites\Subscription.cs" />
+    <Compile Include="Areas\Admin\Entites\SubscriptionProduct.cs" />
+    <Compile Include="Areas\Admin\Entites\UserSubscription.cs" />
+    <Compile Include="Areas\Admin\Extensions\ConversionExtentions.cs" />
+    <Compile Include="Areas\Admin\Extensions\ICollectionExtensions.cs" />
+    <Compile Include="Areas\Admin\Extensions\ReflectionExtensions.cs" />
+    <Compile Include="Areas\Admin\Model\ProductModel.cs" />
     <Compile Include="Areas\Admin\Model\SmallButtonModel.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="Entites\ItemType.cs" />
-    <Compile Include="Entites\Item.cs" />
-    <Compile Include="Entites\SubscriptionProduct.cs" />
-    <Compile Include="Entites\ProductItem.cs" />
-    <Compile Include="Entites\Subscription.cs" />
-    <Compile Include="Entites\ProductLinkText .cs" />
-    <Compile Include="Entites\ProductType.cs" />
-    <Compile Include="Entites\Product.cs" />
-    <Compile Include="Entites\Part.cs" />
-    <Compile Include="Entites\Section.cs" />
-    <Compile Include="Entites\UserSubscription.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201809120937406_1st.cs" />
-    <Compile Include="Migrations\201809120937406_1st.Designer.cs">
-      <DependentUpon>201809120937406_1st.cs</DependentUpon>
+    <Compile Include="Migrations\201809130547455_chage.cs" />
+    <Compile Include="Migrations\201809130547455_chage.Designer.cs">
+      <DependentUpon>201809130547455_chage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809130618330_auto.cs" />
+    <Compile Include="Migrations\201809130618330_auto.Designer.cs">
+      <DependentUpon>201809130618330_auto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809131051054_45.cs" />
+    <Compile Include="Migrations\201809131051054_45.Designer.cs">
+      <DependentUpon>201809131051054_45.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809131051237_kik.cs" />
+    <Compile Include="Migrations\201809131051237_kik.Designer.cs">
+      <DependentUpon>201809131051237_kik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809131150033_shivam.cs" />
+    <Compile Include="Migrations\201809131150033_shivam.Designer.cs">
+      <DependentUpon>201809131150033_shivam.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -254,6 +278,28 @@
     <Content Include="Areas\Admin\Views\Part\Details.cshtml" />
     <Content Include="Areas\Admin\Views\Part\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\Part\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_SmallButtonPartial.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_TableButtonPartial.cshtml" />
+    <Content Include="Areas\Admin\Views\ItemType\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\ItemType\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\ItemType\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\ItemType\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\ItemType\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\ProductType\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\ProductType\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\ProductType\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\ProductType\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\ProductType\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\ProductLinkText\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\ProductLinkText\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\ProductLinkText\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\ProductLinkText\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\ProductLinkText\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Item\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Item\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Item\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Item\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Item\Index.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -323,8 +369,20 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201809120937406_1st.resx">
-      <DependentUpon>201809120937406_1st.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201809130547455_chage.resx">
+      <DependentUpon>201809130547455_chage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809130618330_auto.resx">
+      <DependentUpon>201809130618330_auto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809131051054_45.resx">
+      <DependentUpon>201809131051054_45.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809131051237_kik.resx">
+      <DependentUpon>201809131051237_kik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809131150033_shivam.resx">
+      <DependentUpon>201809131150033_shivam.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

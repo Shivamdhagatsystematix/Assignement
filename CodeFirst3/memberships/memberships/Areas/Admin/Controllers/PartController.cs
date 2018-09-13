@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using memberships.Entites;
+using memberships.Areas.Admin.Entites;
 using memberships.Models;
 
 namespace memberships.Areas.Admin.Controllers

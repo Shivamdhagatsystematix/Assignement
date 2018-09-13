@@ -3,7 +3,6 @@ using System.Data.Entity;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using memberships.Areas.Admin.Entites;
-using memberships.Entites;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 
@@ -47,6 +46,6 @@ namespace memberships.Models
         public DbSet<SubscriptionProduct> SubscriptionProducts { get; set; }
         public DbSet<UserSubscription> UserSubscriptions { get; set; }
 
-
+        public System.Data.Entity.DbSet<memberships.Areas.Admin.Entites.Item> Items { get; set; }
     }
 }
