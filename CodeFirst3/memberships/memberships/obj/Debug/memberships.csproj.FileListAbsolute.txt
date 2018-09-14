@@ -1,5 +1,11 @@
+C:\Users\Shivam dhagat\source\repos\memberships\memberships\obj\Debug\memberships.csprojAssemblyReference.cache
 C:\Users\Shivam dhagat\source\repos\memberships\memberships\obj\Debug\memberships.Migrations.chage.resources
 C:\Users\Shivam dhagat\source\repos\memberships\memberships\obj\Debug\memberships.Migrations.auto.resources
+C:\Users\Shivam dhagat\source\repos\memberships\memberships\obj\Debug\memberships.Migrations._45.resources
+C:\Users\Shivam dhagat\source\repos\memberships\memberships\obj\Debug\memberships.Migrations.kik.resources
+C:\Users\Shivam dhagat\source\repos\memberships\memberships\obj\Debug\memberships.Migrations.shivam.resources
+C:\Users\Shivam dhagat\source\repos\memberships\memberships\obj\Debug\memberships.Migrations._1st.resources
+C:\Users\Shivam dhagat\source\repos\memberships\memberships\obj\Debug\memberships.Migrations.hi.resources
 C:\Users\Shivam dhagat\source\repos\memberships\memberships\obj\Debug\memberships.csproj.GenerateResource.cache
 C:\Users\Shivam dhagat\source\repos\memberships\memberships\obj\Debug\memberships.csproj.CoreCompileInputs.cache
 C:\Users\Shivam dhagat\source\repos\memberships\memberships\bin\ApplicationInsights.config
@@ -120,6 +126,3 @@ C:\Users\Shivam dhagat\source\repos\memberships\memberships\bin\Microsoft.CodeDo
 C:\Users\Shivam dhagat\source\repos\memberships\memberships\obj\Debug\memberships.csproj.CopyComplete
 C:\Users\Shivam dhagat\source\repos\memberships\memberships\obj\Debug\memberships.dll
 C:\Users\Shivam dhagat\source\repos\memberships\memberships\obj\Debug\memberships.pdb
-C:\Users\Shivam dhagat\source\repos\memberships\memberships\obj\Debug\memberships.Migrations._45.resources
-C:\Users\Shivam dhagat\source\repos\memberships\memberships\obj\Debug\memberships.Migrations.kik.resources
-C:\Users\Shivam dhagat\source\repos\memberships\memberships\obj\Debug\memberships.Migrations.shivam.resources

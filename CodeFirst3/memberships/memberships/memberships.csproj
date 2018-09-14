@@ -198,6 +198,7 @@
     <Compile Include="Areas\Admin\Controllers\ItemController.cs" />
     <Compile Include="Areas\Admin\Controllers\ItemTypeController.cs" />
     <Compile Include="Areas\Admin\Controllers\PartController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ProductController.cs" />
     <Compile Include="Areas\Admin\Controllers\ProductLinkTextController.cs" />
     <Compile Include="Areas\Admin\Controllers\ProductTypeController.cs" />
     <Compile Include="Areas\Admin\Controllers\SectionController.cs" />
@@ -212,7 +213,7 @@
     <Compile Include="Areas\Admin\Entites\Subscription.cs" />
     <Compile Include="Areas\Admin\Entites\SubscriptionProduct.cs" />
     <Compile Include="Areas\Admin\Entites\UserSubscription.cs" />
-    <Compile Include="Areas\Admin\Extensions\ConversionExtentions.cs" />
+    <Compile Include="Areas\Admin\Extensions\ConversionExtensions.cs" />
     <Compile Include="Areas\Admin\Extensions\ICollectionExtensions.cs" />
     <Compile Include="Areas\Admin\Extensions\ReflectionExtensions.cs" />
     <Compile Include="Areas\Admin\Model\ProductModel.cs" />
@@ -242,6 +243,14 @@
     <Compile Include="Migrations\201809131150033_shivam.cs" />
     <Compile Include="Migrations\201809131150033_shivam.Designer.cs">
       <DependentUpon>201809131150033_shivam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809140905328_1st.cs" />
+    <Compile Include="Migrations\201809140905328_1st.Designer.cs">
+      <DependentUpon>201809140905328_1st.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809141015178_hi.cs" />
+    <Compile Include="Migrations\201809141015178_hi.Designer.cs">
+      <DependentUpon>201809141015178_hi.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -300,6 +309,11 @@
     <Content Include="Areas\Admin\Views\Item\Details.cshtml" />
     <Content Include="Areas\Admin\Views\Item\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\Item\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Product\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Product\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Product\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Product\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Product\Index.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -383,6 +397,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201809131150033_shivam.resx">
       <DependentUpon>201809131150033_shivam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809140905328_1st.resx">
+      <DependentUpon>201809140905328_1st.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809141015178_hi.resx">
+      <DependentUpon>201809141015178_hi.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -23,12 +23,17 @@ namespace memberships.Areas.Admin.Model
         public String ImageUrl { get; set; }
         public int ProductLinkTextId { get; set; }
         public int ProductTypeId { get; set; }
-        public ICollection<ProductLinkText> ProductLinkTexts { get; set; }
+      
+        [DisplayName("Product Link Text")]
         public ICollection<ProductType> ProductTypes { get; set; }
+        [DisplayName("Product Type")]
+        public ICollection<ProductLinkText> ProductLinkTexts { get; set; }
+
+
         public String ProductType
         { get
             {
-                return ProductType == null || ProductTypes.Count.Equals(0) ?
+                return ProductTypes == null || ProductTypes.Count.Equals(0) ?
                     String.Empty : ProductTypes.First(pt => pt.Id.Equals(ProductTypeId)).Title;
             }
         }
@@ -36,7 +41,7 @@ namespace memberships.Areas.Admin.Model
         {
             get
             {
-                return ProductType == null || ProductLinkTexts.Count.Equals(0) ?
+                return ProductLinkTexts == null || ProductLinkTexts.Count.Equals(0) ?
                     String.Empty : ProductLinkTexts.First(pt => pt.Id.Equals(ProductLinkTextId)).Title;
             }
         }
